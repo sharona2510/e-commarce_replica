@@ -1,94 +1,142 @@
 /*universal declaration*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /*universal header*/
 
-header{
-    background-color: rgb(119, 20, 89);
-    color: antiquewhite;
-    border: 1px solid beige;
-    border-radius: 10px;
-    position: sticky;
-    top: 0px;
+header {
+  background-color: rgb(119, 20, 89);
+  color: antiquewhite;
+  border: 1px solid beige;
+  border-radius: 10px;
+  position: sticky;
+  top: 0px;
 }
 
 /*calling the class nav1*/
 
-.nav1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-    border: 1px solid beige;
+.nav1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  border: 1px solid beige;
 }
 
 /*calling ul in the nav1*/
 
-.nav1 ul{
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
+.nav1 ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
 }
 
 /*calling the class nav2 */
 
-.nav2{
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    border: 1px solid beige;
+.nav2 {
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  border: 1px solid beige;
 }
 
-.nav2 ul {
+.nav2 .menu{
   display: flex;
-  flex-direction: column;
   list-style-type: none;
+  gap: 20px;
+  align-items: center;
 }
 
-.prdlst{
-  background-color: rgb(172, 62, 163);
-  color: antiquewhite;
+
+.nav2 .menu .drpdwn a{
+  text-decoration: none;
+  color: beige;
+}
+
+
+.prdlst {
+  background-color: rgb(204, 204, 204);
+  color: rgb(39, 34, 27);
   position: absolute;
   top: 100%;
   left: 0px;
   display: none;
 }
 
-.drpdwn:hover .prdlst{
+.drpdwn:hover .prdlst {
   display: flex;
   gap: 20px;
 }
 
-.prdlst ul{
+.prdlst ul {
   display: block;
 }
 
-section{
-    background-color: rgb(250, 235, 255);
-    height: 200vh;
+section {
+  background-color: rgb(250, 235, 255);
+  height: 200vh;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top: 80px;
+  margin: auto;
 }
 
 
-
-footer{
-    background-color: rgb(119, 20, 89);
-    color: antiquewhite;
-    border: 1px solid beige;
-    border-radius: 10px;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer ul{
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer {
+  background-color: rgb(119, 20, 89);
+  color: antiquewhite;
+  border: 1px solid beige;
+  border-radius: 10px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;z
+  gap: 20px;
+}
